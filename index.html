@@ -9,50 +9,94 @@
 <!--        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" /> -->
 </head>
     <body>
-        <header>
+        <header id="nav">
+            <nav>
+                <a href="#nav">Home</a>
+                <a href="#blog">Blog</a>
+                <a href="#about">About</a>
+            </nav>
             <h1>GoSec</h1>
             <subtitle>Technology Governance and Security as a service for small business.</subtitle>
         </header>
         <main>
-            <article>
-            <section>
-                <h3>Why Security</h3>
-                <p>The assets with the greatest value are bank accounts, personnel details, intellectual property,
-                    and methods and processes of working.
-                    These assets have value to, and are coveted by bad faith actors, whether they perform corporate
-                    espionage or other mercenary attacks, targeted or opportunistic ransomware or data theft attacks.<br />
-                    A good security implementation with wide coverage will mitigate most of these attacks.
-                </p>
-                <ul>
-                    <li>
-                        At the technology level we have anti-virus/spam/malware, intrusion detection and prevention,
-                        and endpoint security toolsets.
-                    </li>
-                    <li>
-                        At the human level we have education to raise awareness of social engineering methods
-                        and how to mitigate them, and spotting indicators of bad faith communications.<br />
-                    </li>
-                </ul>
-                <p>Why Security?  To retain ownership of your assets.</p>
-            </section>
-            <section>
-                <h3>Why Governance</h3>
-                <p>
-                    Governance provides assurance that the capital expended on the services that secure your
-                    assets is being utilised fully and correctly.
-                </p>
-                <ul>
-                    <li>
-                        By fully, are you getting the best value for your expenditure?
-                    </li>
-                    <li>
-                        By correctly, were the services providing what was needed then, and are they providing
-                        what is needed now?
-                    </li>
-                </ul>
-                <p>Why governance? Assure that the services were, are, and will be performant.</p>
-            </section>
-        </article>
+            <article id="home">
+                <section>
+                    <h3>Why Security</h3>
+                    <p>The assets with the greatest value are bank accounts, personnel details, intellectual property,
+                        and methods and processes of working.
+                        These assets have value to, and are coveted by bad faith actors, whether they perform corporate
+                        espionage or other mercenary attacks, targeted or opportunistic ransomware or data theft attacks.<br />
+                        A good security implementation with wide coverage will mitigate most of these attacks.
+                    </p>
+                    <ul>
+                        <li>
+                            At the technology level we have anti-virus/spam/malware, intrusion detection and prevention,
+                            and endpoint security toolsets.
+                        </li>
+                        <li>
+                            At the human level we have education to raise awareness of social engineering methods
+                            and how to mitigate them, and spotting indicators of bad faith communications.<br />
+                        </li>
+                    </ul>
+                    <p>Why Security?  To retain ownership of your assets.</p>
+                </section>
+                <section>
+                    <h3>Why Governance</h3>
+                    <p>
+                        Governance provides assurance that the capital expended on services for your
+                        assets are being utilised fully and correctly.
+                    </p>
+                    <ul>
+                        <li>
+                            By fully, are you getting the best value for your expenditure?
+                        </li>
+                        <li>
+                            By correctly, are they configured optimally?
+                        </li>
+                    </ul>
+                    <p>Why governance? Assure that the services were, are, and will be performant.</p>
+                </section>
+            </article>
+            <article id="blog">
+                <section>
+                    <h3>Microsoft M365 Authentication update.</h3>
+                    <h5>2024-04-12 Roy Stapleton</h5>
+                    <p>
+                        <blockquote>
+                            On September 30th, 2025, the legacy multifactor authentication and
+                            self-service password reset policies will be deprecated
+                        </blockquote>
+                        It is important to manage the preparation and migration of authentication
+                        and self-service password reset methods in Microsoft Entra, formerly AzureAD,
+                        to ensure that your user-base is not impacted by the blanket migration due
+                        September 30th, 2025.
+                    </p>
+                </section>
+                <section>
+                    <h3>Yahoo and Google DKIM email authentication enforcement.</h3>
+                    <h5>2024-04-12 Roy Stapleton</h5>
+                    <p>
+                        Yahoo and Google recently introduced a requirement for sending email
+                        servers to authenticate their emails with DKIM (Domain Keys Identified Mail)
+                        and SPF (Sender Policy Framework), and advertising their policies using DMARC
+                        (Domain-based Message Authentication and Reporting Conformance).
+                        The SPF and DMARC policies, and the DKIM message authentication public keys
+                        to authenticate received emails are advertised using DNS records.
+                        Without these conifgurations Yahoo and Google will reject your emails.
+                    </p>
+                </section>
+<!--
+                <section>
+                    <h3></h3>
+                    <h5></h5>
+                    <blockquote></blockquote>
+                    <p></p>
+                </section>
+-->
+            </article>
+            <article id="about">
+
+            </article>
         </main>
         <footer>
             GoSec.uk, 79 Kyrkeby, Letchworth Garden City, Hertfordshire.  SG6 2PG. +44 7896 180471
