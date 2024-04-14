@@ -59,6 +59,56 @@
             </article>
             <article id="blog">
                 <section>
+                    <h3>Web log</h3>
+                </section>
+                <section>
+                    <h3>What is Multi Factor Authentication (MFA)</h3>
+                    <h5>2024-04-14</h5>
+                    <p>
+                        To understand multi-factor authentication, it is important to understand what 
+                        authentication is.
+                    </p>
+                    <blockquote>
+                        <p>
+                            The process of determining if someone (or something) is who (or what) it claims to be.
+                        </p>
+                        <p>
+                            <cite>
+                                <a href="https://www.ncsc.gov.uk/section/advice-guidance/glossary#authentication">NCSC Authentication Definition<!--, accessed 2024-04-14--></a>
+                            </cite>
+                        </p>
+                    </blockquote>
+                    <p>
+                        To authenticate we must supply two pieces of information, our identity and a token of some sort, generally a password.
+                    </p>
+                    <p>
+                        That password is an called an authentication factor.  There are three categories 
+                        of authentication factor:
+                        <ul>
+                            <li>
+                                "Something you know", a password or passphrase.
+                            </li>
+                            <li>
+                                "Something you have", a hardware or software token generating device, or a
+                                smartcard or security key.
+                            </li>
+                            <li>
+                                "Something you are", a fingerprint or face scan.
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        To be compliant with multi-factor authentication, commonly two factor
+                        authentication (2FA), you need to have a token from any two of the three
+                        authentication factors listed above.
+                    </p>
+                    <p>
+                        'Windows Hello' is an excellent example of streamlining MFA for the benefit
+                        of end users, it uses the "Something you are", and "Something you have" factors
+                        to provide a strong, password-less, multi-factor authentication system.
+                    </p>
+                </section>
+                <section>
                     <h3>Microsoft M365 Authentication update.</h3>
                     <h5>2024-04-12 Roy Stapleton</h5>
                     <blockquote>
@@ -83,13 +133,13 @@
                     <h3>Yahoo and Google DKIM email authentication enforcement.</h3>
                     <h5>2024-04-12 Roy Stapleton</h5>
                     <p>
-                        Yahoo and Google recently introduced a requirement for sending email
-                        servers to authenticate their emails with DKIM (Domain Keys Identified Mail)
-                        and SPF (Sender Policy Framework), and advertising their policies using DMARC
+                        Yahoo and Google recently introduced a requirement for email servers that send
+                        emails, to authenticate their emails with DKIM (Domain Keys Identified Mail)
+                        and SPF (Sender Policy Framework), and to advertise their policies using DMARC
                         (Domain-based Message Authentication and Reporting Conformance).
                         The SPF and DMARC policies, and the DKIM message authentication public keys
-                        to authenticate received emails are advertised using DNS records.
-                        Without these conifgurations Yahoo and Google will reject your emails.
+                        to authenticate received emails are made available with DNS records.
+                        Without these configurations Yahoo and Google will reject your emails.
                     </p>
                 </section>
 <!--
